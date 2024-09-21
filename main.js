@@ -30,16 +30,14 @@ class FormularioElement extends HTMLElement {
         const form = this.querySelector("#miform");
         
         form.addEventListener("submit", (event) => {
-            event.preventDefault(); // Prevenir que la página se recargue
+            event.preventDefault(); 
             
-            // Obtener los valores de los inputs
             const nombre = this.querySelector("#nombre").value;
             const edad = this.querySelector("#edad").value;
             const correo = this.querySelector("#correo").value;
             const direccion = this.querySelector("#direccion").value;
             const hobbies = this.querySelector("#hobbies").value;
 
-            // Crear el elemento de resultados y pasar los datos
             const resultados = document.createElement('elidallana-element');
             resultados.setAttribute('data-nombre', nombre);
             resultados.setAttribute('data-edad', edad);
@@ -53,5 +51,4 @@ class FormularioElement extends HTMLElement {
     }
 }
 
-// Registro del formulario en HTML
 customElements.define("formulario-element", FormularioElement); 

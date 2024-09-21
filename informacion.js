@@ -19,24 +19,20 @@ class ElidallanaElement extends HTMLElement {
 
         const resultados = this.querySelector("#resultados");
 
-        // Obtener los atributos del elemento
         const nombre = this.getAttribute('data-nombre');
         const edad = this.getAttribute('data-edad');
         const correo = this.getAttribute('data-correo');
         const direccion = this.getAttribute('data-direccion');
         const hobbies = this.getAttribute('data-hobbies');
 
-        // Mostrar los resultados
         this.querySelector("#resultado-nombre").textContent = nombre;
         this.querySelector("#resultado-edad").textContent = edad;
         this.querySelector("#resultado-correo").textContent = correo;
         this.querySelector("#resultado-direccion").textContent = direccion;
         this.querySelector("#resultado-hobbies").textContent = hobbies;
 
-        // Mostrar la sección de resultados
         resultados.style.display = "block";
     }
 }
 
-// Registro del elemento en la lista de los elementos disponibles en HTML
 customElements.define("elidallana-element", ElidallanaElement);
