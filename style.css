@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgb(2, 52, 117), rgb(209, 192, 192))
+}
+
+form{
+    border: 2px solid black;
+    width: 360px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(244, 235, 248);
+    
+}
+
+div {
+    background-color: #ece2f6;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 680px;
+}
+
+div img {
+    width: 120px;
+    height: 130px;
+    border-radius: 60px;
+    margin: 10px;
+}
+
+form, label, input{
+    flex-direction: column;
+    margin: 8px;
+}
+input{
+    width: 200px;
+}
+
+#miform img{
+    width: 120px;
+    height: 130px;
+    border-radius: 60px;
+    margin: 10px;
+}
+
+button {
+    background-color: rgb(108, 181, 250);
+}
